@@ -50,7 +50,12 @@ li a{
   font-size: 38px;
   color: black;
   font-weight: 500;
-
+}
+.btn-sign-up:hover{
+  transition: all 0.5s;
+  color: black;
+  cursor: pointer;
+  background-color: #f52e2e ;
 }
 .navbar-brand span{
   color: var(--primary-red);
