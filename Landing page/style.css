@@ -116,3 +116,17 @@ img {
 
   animation: scaleAnimation 3s infinite;
 }
+.burger{
+  width: 55px;
+  height: 55px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+}
+@media only screen and (max-width: 1200px) {
+ .container{
+  background-color: red;
+ }
+}
