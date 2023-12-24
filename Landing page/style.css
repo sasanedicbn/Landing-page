@@ -1,5 +1,6 @@
 :root{
-  --primary-red: #ce1212
+  --primary-red: #ce1212;
+  --secondary-color: rgb(255, 255, 255);
 }
 *{
   margin: 0;
@@ -36,7 +37,7 @@ li a{
   text-decoration: none;
   color: rgb(15, 15, 15);
 }
-.btn-sign-up{
+.btn{
   font-size: 26px;
   padding: 12px;
   background-color: var(--primary-red);
@@ -51,7 +52,7 @@ li a{
   color: black;
   font-weight: 500;
 }
-.btn-sign-up:hover{
+.btn:hover{
   transition: all 0.5s;
   color: black;
   cursor: pointer;
@@ -88,14 +89,13 @@ img{
   padding-top: 40px;
 }
 .btn-seeMore{
-  
+  background-color: var(--secondary-color) ;
+  color: black;
+  border: 2px solid black;
+  margin-right: 10px;
 }
-.btn-startEating{
-  font-size: 26px;
-  padding: 12px;
-  background-color: var(--primary-red);
-  border-radius: 5px;
-  color: white;
-  border: 1px solid rgb(194, 103, 103);
-  cursor: pointer;
+.btn-seeMore:hover{
+  color: var(--primary-red);
+  font-weight: 500;
+  background-color: white;
 }
