@@ -148,6 +148,7 @@ img {
  .burger{
   display: block;
   z-index: 1000;
+  margin-top: 26px;
  }
  ul{
   display: none;
@@ -175,9 +176,6 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 .burger-line {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 3px;
   background-color: black;
