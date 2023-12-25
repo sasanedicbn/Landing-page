@@ -14,6 +14,21 @@ const menuItems = [
     ingredients: "Lorem, deren, trataro, filede, nerada",
     price: "$8.95",
   },
+  {
+    name: "Eos salad fourth",
+    ingredients: "Lorem, deren, trataro, filede, nerada",
+    price: "$7.45",
+  },
+  {
+    name: "Eos liubustam",
+    ingredients: "Lorem, deren, trataro, filede, nerada",
+    price: "$12.95",
+  },
+  {
+    name: "Laboroisam devida",
+    ingredients: "Lorem, deren, trataro, filede, nerada",
+    price: "$8.95",
+  },
 ];
 const burger = document.querySelector(".burger");
 const navElements = document.querySelector("ul");
