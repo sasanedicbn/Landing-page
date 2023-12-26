@@ -63,3 +63,7 @@ btnLunch.addEventListener("click", function () {
   displayMenuItems.innerHTML = generateMenu(menuItems.slice(2, 4));
   btnLunch.classList.toggle("up");
 });
+btnDinner.addEventListener("click", function () {
+  displayMenuItems.innerHTML = generateMenu(menuItems.slice(4, 6));
+  btnDinner.classList.toggle("up");
+});
