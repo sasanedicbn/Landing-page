@@ -55,6 +55,11 @@ function generateMenu(menuItems) {
     )
     .join("");
 }
+function removeClass() {
+  btnLunch.classList.remove("up");
+  btnDinner.classList.remove("up");
+  btnBreakfast.classList.remove("up");
+}
 btnBreakfast.addEventListener("click", function () {
   displayMenuItems.innerHTML = generateMenu(menuItems.slice(0, 2));
   btnBreakfast.classList.toggle("up");
