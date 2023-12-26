@@ -59,3 +59,7 @@ btnBreakfast.addEventListener("click", function () {
   displayMenuItems.innerHTML = generateMenu(menuItems.slice(0, 2));
   btnBreakfast.classList.toggle("up");
 });
+btnLunch.addEventListener("click", function () {
+  displayMenuItems.innerHTML = generateMenu(menuItems.slice(2, 4));
+  btnLunch.classList.toggle("up");
+});

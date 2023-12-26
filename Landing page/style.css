@@ -231,7 +231,7 @@ main{
   cursor: pointer;
   transition: 0.5s ease;
 }
-.btn-breakfast.up {
+.btn-menu.up {
   margin-bottom: 20px;
   transition: 0.5s ease;
 }
