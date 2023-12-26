@@ -206,9 +206,9 @@ img {
 main{
   background-color: rgb(241, 233, 233);
   padding-top: 20rem;
+  padding-bottom: 250px;
 }
 .container-menu{
-  /* background-color: aqua; */
   width: 500px;
   height: 100px;
   display: flex;
@@ -239,14 +239,44 @@ main{
  display: flex;
  align-items: center;
  justify-content: center;
- background-color: purple;
+ background-color: rgb(212, 199, 199);
  height: 400px;
  width: 1000px;
  margin: 0 auto;
+ border-radius: 5px;
+ color: black;
+ font-weight: 500;
+ font-size: 20px;
+
 }
 .main-container{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+/* MenuItems */
+#img{
+  width: 275px;
+  height: 275px;
+}
+.meals{
+  margin: 20px auto;
+}
+.menuTitle{
+font-size: 24px;
+color: black;
+text-align: center;
+}
+.menuIngredients{
+font-size: 18px;
+color: rgb(61, 61, 61);
+text-align: center;
+}
+.menuPrice{
+font-size: 28px;
+font-weight: bold;
+color: var(--primary-red);
+text-align: center;
+margin-top: 10px;
 }
