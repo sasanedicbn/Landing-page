@@ -1,4 +1,5 @@
 import { menuItems } from "./constants";
+import { sliderData } from "./sliderData";
 
 const burger = document.querySelector(".burger");
 const navElements = document.querySelector("ul");
@@ -46,3 +47,8 @@ btnDinner.addEventListener("click", function () {
   displayMenuItems.innerHTML = generateMenu(menuItems.slice(4, 6));
   btnDinner.classList.toggle("up");
 });
+
+function generateSlider(sliderData) {
+  return sliderData.map((element) => `<div>${element.title}</div>`);
+}
+console.log(generateSlider);
