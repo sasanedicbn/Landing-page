@@ -62,13 +62,16 @@ function removeClass() {
 }
 btnBreakfast.addEventListener("click", function () {
   displayMenuItems.innerHTML = generateMenu(menuItems.slice(0, 2));
+  removeClass();
   btnBreakfast.classList.toggle("up");
 });
 btnLunch.addEventListener("click", function () {
   displayMenuItems.innerHTML = generateMenu(menuItems.slice(2, 4));
+  removeClass();
   btnLunch.classList.toggle("up");
 });
 btnDinner.addEventListener("click", function () {
+  removeClass();
   displayMenuItems.innerHTML = generateMenu(menuItems.slice(4, 6));
   btnDinner.classList.toggle("up");
 });
