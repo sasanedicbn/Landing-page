@@ -249,13 +249,13 @@ main{
  font-size: 20px;
 
 }
+/* MenuItems */
 .main-container{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-/* MenuItems */
 #img{
   width: 275px;
   height: 275px;
