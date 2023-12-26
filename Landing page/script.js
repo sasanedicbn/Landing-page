@@ -32,12 +32,30 @@ const menuItems = [
 ];
 const burger = document.querySelector(".burger");
 const navElements = document.querySelector("ul");
-const btn = document.querySelector(".btn-breakfast");
+const displayMenuItems = document.querySelector(".container-menu-items");
+const btnBreakfast = document.querySelector(".btn-breakfast");
+const btnLunch = document.querySelector(".btn-lunch");
+const btnDinner = document.querySelector(".btn-dinner");
 
 burger.addEventListener("click", function () {
   navElements.classList.toggle("showNav");
   burger.classList.toggle("stylized");
 });
-btn.addEventListener("click", function () {
-  btn.classList.toggle("up");
+function generateMenu(menuItems) {
+  return menuItems
+    .map(
+      (item) =>
+        `
+    <div>
+      <h3>${item.name}</h3>
+      <p>${item.ingredients}</p>
+      <p>${item.price}</p>
+    </div>
+  `
+    )
+    .join("");
+}
+btnBreakfast.addEventListener("click", function () {
+  displayMenuItems.innerHTML = generateMenu(menuItems.slice(0, 2));
+  btnBreakfast.classList.toggle("up");
 });
