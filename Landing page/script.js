@@ -32,8 +32,12 @@ const menuItems = [
 ];
 const burger = document.querySelector(".burger");
 const navElements = document.querySelector("ul");
+const btn = document.querySelector(".btn-breakfast");
 
 burger.addEventListener("click", function () {
   navElements.classList.toggle("showNav");
   burger.classList.toggle("stylized");
+});
+btn.addEventListener("click", function () {
+  btn.classList.toggle("up");
 });
