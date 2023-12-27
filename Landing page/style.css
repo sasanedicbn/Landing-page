@@ -307,8 +307,8 @@ margin-top: 10px;
   height: 30rem;
 }
 .slider-first {
-  background-color: rgb(119, 105, 105);
-  transform: translateX(100%); 
+  background-color: red;
+  /* transform: translateX(100%);  */
 }
 
 .slider-second {
@@ -317,7 +317,7 @@ margin-top: 10px;
 
 .slider-third {
   background-color: blue;
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
 }
 
 .slider-btn {
