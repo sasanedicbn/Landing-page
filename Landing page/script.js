@@ -56,3 +56,4 @@ console.log(generateSlider);
 // Slider
 const sliders = document.querySelectorAll(".slider-child");
 const prevBtn = document.querySelector(".prevSlider");
+const nextBtn = document.querySelector(".nextSlider");
