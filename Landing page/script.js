@@ -57,14 +57,30 @@ console.log(generateSlider);
 const sliders = document.querySelectorAll(".slider-child");
 const prevBtn = document.querySelector(".prevSlider");
 const nextBtn = document.querySelector(".nextSlider");
-
+let counter = 0;
 nextBtn.addEventListener("click", function () {
-  sliders.forEach((slide) => {
-    slide.style.transform = `translateX(${-100}%)`;
-  });
+  if (counter < sliders.length - 1) {
+    counter++;
+  } else {
+    counter = 0;
+  }
+  updateSlider(counter);
+  // sliders.forEach((slide) => {
+  //   slide.style.transform = `translateX(${-100}%)`;
+  // });
 });
 prevBtn.addEventListener("click", function () {
-  sliders.forEach((slide) => {
-    slide.style.transform = `translateX(${100}%)`;
-  });
+  if (counter > sliders.length - 1) {
+    counter--;
+  } else {
+    counter = sliders.length - 1;
+  }
+
+  updateSlider(counter);
 });
+
+function updateSlider(counter) {
+  sliders.forEach((slide) => {
+    slide.style.transform = `translateX(${-counter * 100}%)`;
+  });
+}
