@@ -57,3 +57,9 @@ console.log(generateSlider);
 const sliders = document.querySelectorAll(".slider-child");
 const prevBtn = document.querySelector(".prevSlider");
 const nextBtn = document.querySelector(".nextSlider");
+
+nextBtn.addEventListener("click", function () {
+  sliders.forEach((slide) => {
+    slide.style.transform = `translateX(${100}%)`;
+  });
+});
