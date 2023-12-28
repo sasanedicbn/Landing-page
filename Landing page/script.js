@@ -66,7 +66,7 @@ nextBtn.addEventListener("click", function () {
     counter = -1;
   }
   updateSlider(counter);
-  console.log(counter);
+  // console.log(counter);
 });
 prevBtn.addEventListener("click", function () {
   if (counter > -1) {
@@ -76,11 +76,12 @@ prevBtn.addEventListener("click", function () {
   }
 
   updateSlider(counter);
-  console.log(counter);
+  // console.log(counter);
 });
 
 function updateSlider(counter) {
-  sliders.forEach((slide) => {
-    slide.style.transform = `translateX(${-counter * 100}%)`;
+  sliders.forEach((slide, index) => {
+    console.log(index);
+    slide.style.transform = `translateX(${`${-counter - index + 1}` * 100}%)`;
   });
 }

@@ -340,9 +340,33 @@ section{
 }
 
 .prevSlider {
-  left: 5rem;
+  left: 2rem;
 }
 
 .nextSlider {
-  right: 5rem;
+  right: 2rem;
+}
+
+.testimonial-img{
+  transform: none;
+  animation: none; 
+  width: 200px;
+  height: 200px;
+  padding-top: 0;
+  border-radius: 100%;
+  position: absolute;
+  top:-20px;
+  left: 50%;
+  transform: translate(-50%,-25%);
+  /* border:2px solidblue; */
+}
+.testimonial-description{
+  font-size: 20px;
+  margin-top: 150px;
+  margin: 225px 130px;
+}
+.testimonial-author{
+  margin-top: -100px;
+  margin-left: 60%;
+  font-weight: 500;
 }
