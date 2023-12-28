@@ -70,7 +70,7 @@ nextBtn.addEventListener("click", function () {
   // });
 });
 prevBtn.addEventListener("click", function () {
-  if (counter > sliders.length - 1) {
+  if (counter > 0) {
     counter--;
   } else {
     counter = sliders.length - 1;
