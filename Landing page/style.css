@@ -284,8 +284,8 @@ margin-top: 10px;
 .container-slider{
   background-color: rgb(71, 87, 81);
   position: relative;
-  margin-top: 15rem;
-  width: 90rem;
+  margin-top: 17rem;
+  width: 70rem;
   overflow: hidden;
   margin: 0 auto;
 
@@ -294,7 +294,7 @@ margin-top: 10px;
   display: flex;
   background-color: red;
   margin: 8rem auto;
-  width: 90rem;
+  width: 70rem;
   overflow: hidden;
   height: 30rem;
 

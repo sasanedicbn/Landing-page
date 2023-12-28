@@ -52,3 +52,6 @@ function generateSlider(sliderData) {
   return sliderData.map((element) => `<div>${element.title}</div>`);
 }
 console.log(generateSlider);
+
+// Slider
+const sliders = document.querySelectorAll(".slider-child");
