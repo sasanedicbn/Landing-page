@@ -65,9 +65,6 @@ nextBtn.addEventListener("click", function () {
     counter = 0;
   }
   updateSlider(counter);
-  // sliders.forEach((slide) => {
-  //   slide.style.transform = `translateX(${-100}%)`;
-  // });
 });
 prevBtn.addEventListener("click", function () {
   if (counter > 0) {

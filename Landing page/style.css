@@ -301,7 +301,7 @@ margin-top: 10px;
 }
 .slider-child{
   width: 100%;
-  padding: 4rem;
+  padding: 0;
   margin: 0 auto;
   transition: ease-out 1s;
   height: 30rem;
