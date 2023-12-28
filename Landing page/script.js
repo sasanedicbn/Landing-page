@@ -58,22 +58,25 @@ const sliders = document.querySelectorAll(".slider-child");
 const prevBtn = document.querySelector(".prevSlider");
 const nextBtn = document.querySelector(".nextSlider");
 let counter = 0;
+console.log(sliders);
 nextBtn.addEventListener("click", function () {
-  if (counter < sliders.length - 1) {
+  if (counter < sliders.length - 2) {
     counter++;
   } else {
-    counter = 0;
+    counter = -1;
   }
   updateSlider(counter);
+  console.log(counter);
 });
 prevBtn.addEventListener("click", function () {
-  if (counter > 0) {
+  if (counter > -1) {
     counter--;
   } else {
-    counter = sliders.length - 1;
+    counter = sliders.length - 2;
   }
 
   updateSlider(counter);
+  console.log(counter);
 });
 
 function updateSlider(counter) {
