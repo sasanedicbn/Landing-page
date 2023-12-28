@@ -60,6 +60,11 @@ const nextBtn = document.querySelector(".nextSlider");
 
 nextBtn.addEventListener("click", function () {
   sliders.forEach((slide) => {
+    slide.style.transform = `translateX(${-100}%)`;
+  });
+});
+prevBtn.addEventListener("click", function () {
+  sliders.forEach((slide) => {
     slide.style.transform = `translateX(${100}%)`;
   });
 });
