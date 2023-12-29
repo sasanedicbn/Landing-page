@@ -1,5 +1,4 @@
 import { menuItems } from "./constants";
-import { sliderData } from "./sliderData";
 
 const burger = document.querySelector(".burger");
 const navElements = document.querySelector("ul");
@@ -66,7 +65,6 @@ nextBtn.addEventListener("click", function () {
     counter = -1;
   }
   updateSlider(counter);
-  // console.log(counter);
 });
 prevBtn.addEventListener("click", function () {
   if (counter > -1) {
@@ -76,13 +74,13 @@ prevBtn.addEventListener("click", function () {
   }
 
   updateSlider(counter);
-  // console.log(counter);
 });
 
 function updateSlider(counter) {
   sliders.forEach((slide, index) => {
-    console.log("Previous button clicked. Counter:", counter);
-    console.log("Index:", index);
     slide.style.transform = `translateX(${`${index - 1 - counter}` * 100}%)`;
   });
 }
+// 0 - 1 - 0 * 100 = -100
+// 1 - 1 - 0 * 100 = 0;
+// 2 - 1 - 0 * 100 = 100;
