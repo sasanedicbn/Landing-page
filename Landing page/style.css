@@ -291,6 +291,7 @@ section{
   width: 50rem;
   margin: 0 auto;
   height: 30rem;
+  position: relative;
 
 }
 .slider{
@@ -347,7 +348,7 @@ section{
   right: 2rem;
 }
 
-.testimonial-img{
+#testimonial-img{
   transform: none;
   animation: none; 
   width: 200px;

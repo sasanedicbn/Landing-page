@@ -81,7 +81,8 @@ prevBtn.addEventListener("click", function () {
 
 function updateSlider(counter) {
   sliders.forEach((slide, index) => {
-    console.log(index);
-    slide.style.transform = `translateX(${`${-counter - index + 1}` * 100}%)`;
+    console.log("Previous button clicked. Counter:", counter);
+    console.log("Index:", index);
+    slide.style.transform = `translateX(${`${index - 1 - counter}` * 100}%)`;
   });
 }
